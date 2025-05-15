@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio>
+    <prato id="P01">
+        <nome>Pure de Batata</nome>
+        <descricao>Comida pastosa feita com batata</descricao>
+        <igredientes>Batata, leite, margarina, sal e alho</igredientes>
+        <preço>R$ 20,00</preço>
+        <tempo>10min</tempo>
+        <calorias>88 calorias</calorias>
+    </prato>
+
+    <prato id="P02">
+        <nome>Macarrão à Bolonhesa</nome>
+        <descricao>Macarrão com molho de carne moída e tomate</descricao>
+        <igredientes>Macarrão, carne moída, molho de tomate, cebola, alho</igredientes>
+        <preço>R$ 25,00</preço>
+        <tempo>20min</tempo>
+        <calorias>450 calorias</calorias>
+    </prato>
+
+    <prato id="P03">
+        <nome>Salada Tropical</nome>
+        <descricao>Salada refrescante com frutas e vegetais</descricao>
+        <igredientes>Alface, rúcula, manga, morango, nozes</igredientes>
+        <preço>R$ 18,00</preço>
+        <tempo>18min</tempo>
+        <calorias>120 calorias</calorias>
+    </prato>
+
+    <prato id="P04">
+        <nome>Frango Grelhado com Legumes</nome>
+        <descricao>Peito de frango grelhado acompanhado de legumes cozidos</descricao>
+        <igredientes>Frango, cenoura, brócolis, abobrinha, azeite</igredientes>
+        <preço>R$ 30,00</preço>
+        <tempo>17min</tempo>
+        <calorias>350 calorias</calorias>
+    </prato>
+
+    <prato id="P05">
+        <nome>Omelete de Queijo</nome>
+        <descricao>Omelete simples recheada com queijo</descricao>
+        <igredientes>Ovos, queijo, sal, pimenta</igredientes>
+        <preço>R$ 15,00</preço>
+        <tempo>15min</tempo>
+        <calorias>200 calorias</calorias>
+    </prato>
+</cardapio>
