@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:p="http://imobiliaria.org" targetNamespace="http://imobiliaria.org" elementFormDefault="unqualified">
+
+    <element name="nome" type="string"/>
+
+    <element name="descricao" type="string"/>
+
+    <element name="valor" type="integer"/>
+
+    <element name="endereço" type="string"/>
+
+    <element name="proprietario" type="string">
+        <complexType>
+            <sequence>
+                <element name="telefone"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="caracteristica" type="string"/>
+
+    <element name="caracteristicas">
+        <complexType>
+            <sequence>
+                <element ref="p:caracteristica" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="imovel">
+        <complexType>
+            <sequence>
+                <element ref="p:nome"/>
+                <element ref="p:descricao"/>
+                <element ref="p:caracteristicas"/>
+                <element ref="p:proprietario"/>
+                <element ref="p:endereço"/>
+                <element ref="p:valor"/>
+            </sequence>
+            <attribute name="id" type="integer"/>
+        </complexType>
+    </element>
+
+    <element name="imobiliaria">
+        <complexType>
+            <sequence>
+                <element ref="p:imovel" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
