@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio xmlns="http://cardapio.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://cardapio.org 
+                           cardapio.xsd">
+
+        <prato id="1">
+            <nome>Pure de Batata</nome>
+            <descricao>Comida pastosa feita com batata</descricao>
+            <ingredientes>
+                <ingrediente>Batata</ingrediente>
+                <ingrediente>Batata</ingrediente>
+                <ingrediente>Batata</ingrediente>
+            </ingredientes>
+            <preço>20.00</preço>
+            <tempoPreparo>10</tempoPreparo>
+            <calorias>88</calorias>
+        </prato>
+
+        <prato id="2">
+            <nome>Macarrão à Bolonhesa</nome>
+            <descricao>Macarrão com molho de carne moída e tomate</descricao>
+            <ingredientes>
+                <ingrediente>Macarrão</ingrediente>
+                <ingrediente>Carne moída</ingrediente>
+                <ingrediente>Molho de tomate</ingrediente>
+                <ingrediente>Cebola</ingrediente>
+                <ingrediente>Alho</ingrediente>
+            </ingredientes>
+            <preço>25.00</preço>
+            <tempoPreparo>20</tempoPreparo>
+            <calorias>450</calorias>
+        </prato>
+
+        <prato id="3">
+            <nome>Salada Tropical</nome>
+            <descricao>Salada refrescante com frutas e vegetais</descricao>
+            <ingredientes>
+                <ingrediente>Alface</ingrediente>
+                <ingrediente>Rúcula</ingrediente>
+                <ingrediente>Manga</ingrediente>
+                <ingrediente>Morango</ingrediente>
+                <ingrediente>Nozes</ingrediente>
+            </ingredientes>
+            <preço>18.00</preço>
+            <tempoPreparo>18</tempoPreparo>
+            <calorias>120</calorias>
+        </prato>
+
+        <prato id="4">
+            <nome>Frango Grelhado com Legumes</nome>
+            <descricao>Peito de frango grelhado acompanhado de legumes cozidos</descricao>
+            <ingredientes>
+                <ingrediente>Frango</ingrediente>
+                <ingrediente>Cenoura</ingrediente>
+                <ingrediente>Brócolis</ingrediente>
+                <ingrediente>Abobrinha</ingrediente>
+                <ingrediente>Azeite</ingrediente>
+            </ingredientes>
+            <preço>30.00</preço>
+            <tempoPreparo>17</tempoPreparo>
+            <calorias>350</calorias>
+        </prato>
+
+        <prato id="5">
+            <nome>Omelete de Queijo</nome>
+            <descricao>Omelete simples recheada com queijo</descricao>
+            <ingredientes>
+                <ingrediente>Ovos</ingrediente>
+                <ingrediente>Queijo</ingrediente>
+                <ingrediente>Sal</ingrediente>
+                <ingrediente>Pimenta</ingrediente>
+            </ingredientes>
+            <preço>15.00</preço>
+            <tempoPreparo>15</tempoPreparo>
+            <calorias>200</calorias>
+        </prato>
+    </cardapio>

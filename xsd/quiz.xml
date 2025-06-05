@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+<quiz versao="1.0">
+    <disciplina>POS</disciplina>
+    <professor>
+        <nome>Diego Cirilo</nome>
+        <matrícula>20221180035</matrícula>
+    </professor>
+    <turma>Infoweb22</turma>
+    <data>22/05</data>
+    <questões>
+        <questão>
+            <enunciado>O XML é uma linguagem de marcação?</enunciado>
+            <pontuação>5 pontos</pontuação>
+            <alternativas>
+                <alternativa correta="sim">SIM</alternativa>
+                <alternativa correta="nao">NÃO</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>O DTD serve para definir a estrutura de um XML?</enunciado>
+            <pontuação>5 pontos</pontuação>
+            <alternativas>
+                <alternativa correta="sim">SIM</alternativa>
+                <alternativa correta="nao">NÃO</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>O XML permite a abertura de tags sem fechamento?</enunciado>
+            <pontuação>5 pontos</pontuação>
+            <alternativas>
+                <alternativa correta="nao">SIM</alternativa>
+                <alternativa correta="sim">NÃO</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Um documento XML pode ter mais de um elemento raiz?</enunciado>
+            <pontuação>5 pontos</pontuação>
+            <alternativas>
+                <alternativa correta="nao">SIM</alternativa>
+                <alternativa correta="sim">NÃO</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>O XML é sensível a maiúsculas e minúsculas?</enunciado>
+            <pontuação>5 pontos</pontuação>
+            <alternativas>
+                <alternativa correta="sim">SIM</alternativa>
+                <alternativa correta="nao">NÃO</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>

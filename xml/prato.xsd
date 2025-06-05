@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Elemento raiz -->
+  <xs:element name="prato">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Nome -->
+        <xs:element name="nome">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="100"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- Refeição (enumerado) -->
+        <xs:element name="refeicao">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="cafe"/>
+              <xs:enumeration value="almoco"/>
+              <xs:enumeration value="janta"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- Ingredientes -->
+        <xs:element name="ingredientes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ingrediente" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Preço -->
+        <xs:element name="preco">
+          <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+              <xs:fractionDigits value="2"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <!-- Data de cadastro -->
+        <xs:element name="dataCadastro" type="xs:date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

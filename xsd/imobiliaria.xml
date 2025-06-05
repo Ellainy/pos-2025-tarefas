@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imobiliaria [
+    <!ELEMENT imobiliaria (imovel+)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+    
+    <!ELEMENT descricao (#PCDATA)>
+    
+    <!ELEMENT proprietario (nome, (email | telefone)+)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+    
+    <!ELEMENT endereco (rua, bairro, cidade, numero?)>
+    <!ELEMENT rua (#PCDATA)>
+    <!ELEMENT bairro (#PCDATA)>
+    <!ELEMENT cidade (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    
+    <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+    <!ELEMENT tamanho (#PCDATA)>
+    <!ELEMENT numQuartos (#PCDATA)>
+    <!ELEMENT numBanheiros (#PCDATA)>
+    
+    <!ELEMENT valor (#PCDATA)>
+]>
+
+<imobiliaria>
+    <imovel>
+        <descricao>Apartamento moderno com ótima localização</descricao>
+        <proprietario>
+            <nome>João Silva</nome>
+            <telefone>1199999-0000</telefone>
+            <telefone>1198888-1111</telefone>
+            <email>joao@gmail.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Flores</rua>
+            <bairro>Centro</bairro>
+            <cidade>São Paulo</cidade>
+            <numero>100</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>85m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 550.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Casa espaçosa com quintal amplo</descricao>
+        <proprietario>
+            <nome>Maria Oliveira</nome>
+            <telefone>1197777-2222</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Acácias</rua>
+            <bairro>Jardim das Flores</bairro>
+            <cidade>Campinas</cidade>
+            <numero>450</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>250m²</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 750.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Kitnet prática e bem localizada</descricao>
+        <proprietario>
+            <nome>Pedro Santos</nome>
+            <email>pedro_santos@hotmail.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua Principal</rua>
+            <bairro>Centro</bairro>
+            <cidade>Curitiba</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>35m²</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 180.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Apartamento de luxo com vista para o mar</descricao>
+        <proprietario>
+            <nome>Ana Paula</nome>
+            <email>anapaula@gmail.com</email>
+            <telefone>2196666-3333</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Av. Atlântica</rua>
+            <bairro>Copacabana</bairro>
+            <cidade>Rio de Janeiro</cidade>
+            <numero>1500</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>200m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>4</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 2.500.000,00</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Sobrado aconchegante com garagem</descricao>
+        <proprietario>
+            <nome>Carlos Mendes</nome>
+            <telefone>1195555-4444</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Palmeiras</rua>
+            <bairro>Vila Nova</bairro>
+            <cidade>Porto Alegre</cidade>
+            <numero>321</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120m²</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 480.000,00</valor>
+    </imovel>
+</imobiliaria>

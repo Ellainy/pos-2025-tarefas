@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="prato.xsd">
+       
+    <nome>Feijoada Completa</nome>
+    <refeicao>almoco</refeicao>
+    <ingredientes>
+        <ingrediente>Feijão preto</ingrediente>
+        <ingrediente>Carne seca</ingrediente>
+        <ingrediente>Linguiça</ingrediente>
+        <ingrediente>Farofa</ingrediente>
+    </ingredientes>
+    <preco>29.90</preco>
+    <dataCadastro>2025-05-29</dataCadastro>
+</prato>
