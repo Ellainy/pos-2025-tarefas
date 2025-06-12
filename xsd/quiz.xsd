@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:p="http://quiz.org" targetNamespace="http://quiz.org" elementFormDefault="unqualified">
+
+    <element name="disciplina" type="string"/>
+
+    <element name="turma" type="string"/>
+
+    <element name="data" type="string"/>
+
+    <element name="nome" type="string"/>
+
+    <element name="matricula" type="string"/>
+
+    <element name="enunciado" type="string"/>
+
+    <element name="pontuacao" type="decimal"/>
+
+    <element name="alternativa" type="verificaçao"/>
+
+    <complexType name="verificaçao">
+        <simpleContent>
+            <extension base="integer">
+                <attribute name="correta" type="string" />
+            </extension>
+        </simpleContent>
+    </complexType>
+
+
+    <element name="professor">
+        <complexType>
+            <sequence>
+                <element ref="p:nome"/>
+                <element ref="p:matricula"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="alternativas">
+        <complexType>
+            <sequence>
+                <element ref="p:alternativa" minOccurs="2" maxOccurs="5" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="questao">
+        <complexType>
+            <sequence>
+                <element ref="p:enunciado"/>
+                <element ref="p:pontuacao"/>
+                <element ref="p:alternativas"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="questoes">
+        <complexType>
+            <sequence>
+                <element ref="p:questao" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="quiz">
+        <complexType>
+            <sequence>
+                <element ref="p:disciplina"></element>
+                <element ref="p:professor"></element>
+                <element ref="p:turma"></element>
+                <element ref="p:data"></element>
+                <element ref="p:questoes"></element>
+            </sequence>
+            <attribute name="versao" type="integer" use="required"></attribute>
+        </complexType>
+    </element>
+</schema>

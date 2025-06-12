@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE quiz SYSTEM "quiz.dtd">
-<quiz versao="1.0">
+<quiz xmlns="http://quiz.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://quiz.org 
+                           quiz.xsd">
+
     <disciplina>POS</disciplina>
     <professor>
         <nome>Diego Cirilo</nome>
-        <matrícula>20221180035</matrícula>
+        <matricula>20221180035</matricula>
     </professor>
     <turma>Infoweb22</turma>
     <data>22/05</data>
-    <questões>
-        <questão>
+    <questoes>
+        <questao>
             <enunciado>O XML é uma linguagem de marcação?</enunciado>
-            <pontuação>5 pontos</pontuação>
+            <pontuacao>5</pontuacao>
             <alternativas>
                 <alternativa correta="sim">SIM</alternativa>
                 <alternativa correta="nao">NÃO</alternativa>
             </alternativas>
-        </questão>
+        </questao>
 
-        <questão>
+        <questao>
             <enunciado>O DTD serve para definir a estrutura de um XML?</enunciado>
-            <pontuação>5 pontos</pontuação>
+            <pontuacao>5</pontuacao>
             <alternativas>
                 <alternativa correta="sim">SIM</alternativa>
                 <alternativa correta="nao">NÃO</alternativa>
             </alternativas>
-        </questão>
+        </questao>
 
-        <questão>
+        <questao>
             <enunciado>O XML permite a abertura de tags sem fechamento?</enunciado>
-            <pontuação>5 pontos</pontuação>
+            <pontuacao>5</pontuacao>
             <alternativas>
                 <alternativa correta="nao">SIM</alternativa>
                 <alternativa correta="sim">NÃO</alternativa>
             </alternativas>
-        </questão>
+        </questao>
 
-        <questão>
+        <questao>
             <enunciado>Um documento XML pode ter mais de um elemento raiz?</enunciado>
-            <pontuação>5 pontos</pontuação>
+            <pontuacao>5</pontuacao>
             <alternativas>
                 <alternativa correta="nao">SIM</alternativa>
                 <alternativa correta="sim">NÃO</alternativa>
             </alternativas>
-        </questão>
+        </questao>
 
-        <questão>
+        <questao>
             <enunciado>O XML é sensível a maiúsculas e minúsculas?</enunciado>
-            <pontuação>5 pontos</pontuação>
+            <pontuacao>5</pontuacao>
             <alternativas>
                 <alternativa correta="sim">SIM</alternativa>
                 <alternativa correta="nao">NÃO</alternativa>
             </alternativas>
-        </questão>
-    </questões>
+        </questao>
+    </questoes>
 </quiz>
