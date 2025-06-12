@@ -4,26 +4,55 @@
 
     <element name="nome" type="string"/>
 
+    <element name="email" type="string"/>
+
+    <element name="telefone" type="string"/>
+
     <element name="descricao" type="string"/>
 
-    <element name="valor" type="integer"/>
+    <element name="valor" type="decimal"/>
 
-    <element name="endereço" type="string"/>
+    <element name="rua" type="string"/>
 
-    <element name="proprietario" type="string">
+    <element name="bairro" type="string"/>
+
+    <element name="cidade" type="string"/>
+
+    <element name="numero" type="integer"/>
+
+    <element name="numQuartos" type="integer"/>
+
+    <element name="numBanheiros" type="integer"/>
+
+    <element name="tamanho" type="decimal"/>
+
+    <element name="endereço">
         <complexType>
             <sequence>
-                <element name="telefone"></element>
+                <element ref="p:rua"/>
+                <element ref="p:bairro"/>
+                <element ref="p:cidade"/>
+                <element ref="p:numero" minOccurs="0"/>
             </sequence>
         </complexType>
     </element>
 
-    <element name="caracteristica" type="string"/>
-
+    <element name="proprietario">
+        <complexType>
+            <sequence>
+               <element ref="p:nome"/>
+               <element ref="p:email" minOccurs="0"/>
+               <element ref="p:telefone" minOccurs="0" maxOccurs="2"/>
+            </sequence>
+        </complexType>
+    </element>
+ 
     <element name="caracteristicas">
         <complexType>
             <sequence>
-                <element ref="p:caracteristica" maxOccurs="unbounded"/>
+                <element ref="p:tamanho"/>
+                <element ref="p:numQuartos"/>
+                <element ref="p:numBanheiros"/>
             </sequence>
         </complexType>
     </element>
@@ -31,11 +60,10 @@
     <element name="imovel">
         <complexType>
             <sequence>
-                <element ref="p:nome"/>
                 <element ref="p:descricao"/>
-                <element ref="p:caracteristicas"/>
                 <element ref="p:proprietario"/>
                 <element ref="p:endereço"/>
+                <element ref="p:caracteristicas"/>
                 <element ref="p:valor"/>
             </sequence>
             <attribute name="id" type="integer"/>
