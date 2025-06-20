@@ -20,7 +20,7 @@
 
     <complexType name="verificaçao">
         <simpleContent>
-            <extension base="integer">
+            <extension base="string">
                 <attribute name="correta" type="string" />
             </extension>
         </simpleContent>
