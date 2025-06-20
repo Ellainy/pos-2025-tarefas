@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+<cardapio>
+    <prato>
+        <nome>Pure de Batata</nome>
+        <descricao>Comida pastosa feita com batata</descricao>
+        <ingredientes>
+            <ingrediente numero="01">Batata</ingrediente>
+            <ingrediente numero="02">Batata</ingrediente>
+            <ingrediente numero="03">Batata</ingrediente>
+        </ingredientes>   
+        <preco>R$ 20,00</preco>
+        <tempo>10min</tempo>
+        <calorias>88 calorias</calorias>
+    </prato>
+
+    <prato>
+        <nome>Macarrão à Bolonhesa</nome>
+        <descricao>Macarrão com molho de carne moída e tomate</descricao>
+        <ingredientes>
+            <ingrediente numero="01">Macarrão</ingrediente>
+            <ingrediente numero="02">Carne moída</ingrediente>
+            <ingrediente numero="03">Molho de tomate</ingrediente>
+            <ingrediente numero="04">Cebola</ingrediente>
+            <ingrediente numero="05">Alho</ingrediente>
+        </ingredientes>
+        <preco>R$ 25,00</preco>
+        <tempo>20min</tempo>
+        <calorias>450 calorias</calorias>
+    </prato>
+
+    <prato>
+        <nome>Salada Tropical</nome>
+        <descricao>Salada refrescante com frutas e vegetais</descricao>
+        <ingredientes>
+            <ingrediente numero="01">Alface</ingrediente>
+            <ingrediente numero="02">Rúcula</ingrediente>
+            <ingrediente numero="03">Manga</ingrediente>
+            <ingrediente numero="04">Morango</ingrediente>
+            <ingrediente numero="05">Nozes</ingrediente>
+        </ingredientes>
+        <preco>R$ 18,00</preco>
+        <tempo>18min</tempo>
+        <calorias>120 calorias</calorias>
+    </prato>
+
+    <prato>
+        <nome>Frango Grelhado com Legumes</nome>
+        <descricao>Peito de frango grelhado acompanhado de legumes cozidos</descricao>
+        <ingredientes>
+            <ingrediente numero="01">Frango</ingrediente>
+            <ingrediente numero="02">Cenoura</ingrediente>
+            <ingrediente numero="03">Brócolis</ingrediente>
+            <ingrediente numero="04">Abobrinha</ingrediente>
+            <ingrediente numero="05">Azeite</ingrediente>
+        </ingredientes>
+        <preco>R$ 30,00</preco>
+        <tempo>17min</tempo>
+        <calorias>350 calorias</calorias>
+    </prato>
+
+    <prato>
+        <nome>Omelete de Queijo</nome>
+        <descricao>Omelete simples recheada com queijo</descricao>
+        <ingredientes>
+            <ingrediente numero="01">Ovos</ingrediente>
+            <ingrediente numero="02">Queijo</ingrediente>
+            <ingrediente numero="03">Sal</ingrediente>
+            <ingrediente numero="04">Pimenta</ingrediente>
+        </ingredientes>
+        <preco>R$ 15,00</preco>
+        <tempo>15min</tempo>
+        <calorias>200 calorias</calorias>
+    </prato>
+</cardapio>
