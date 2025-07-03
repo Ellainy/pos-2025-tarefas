@@ -1,30 +1,27 @@
 import json
 import xml.etree.ElementTree as ET
 
-# Abre o JSON
-with open('imobiliaria.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
+with open('parsers/imobiliaria.json') as json_file:
+    parsed_data = json.load(json_file)
 
-# Cria o elemento raiz
+json_string = '{"imobiliaria": {"imovel": []}}'
+parsed_from_string = json.loads(json_string)
+
 imobiliaria = ET.Element('imobiliaria')
 
-for imovel in data['imobiliaria']['imovel']:
+for imovel in parsed_data['imobiliaria']['imovel']:
     imovel_elem = ET.SubElement(imobiliaria, 'imovel')
 
-    # Se tiver id, coloca como atributo
     if imovel.get('id') is not None:
         imovel_elem.set('id', f"Imovel_{imovel['id']}")
 
-    # Descrição
     descricao = ET.SubElement(imovel_elem, 'descricao')
     descricao.text = imovel['descricao']
 
-    # Proprietário
     proprietario = ET.SubElement(imovel_elem, 'proprietario')
     nome = ET.SubElement(proprietario, 'nome')
     nome.text = imovel['proprietario']['nome']
 
-    # Email(s) e telefone(s)
     prop = imovel['proprietario']
 
     if 'email' in prop:
@@ -47,7 +44,6 @@ for imovel in data['imobiliaria']['imovel']:
             tel_elem = ET.SubElement(proprietario, 'telefone')
             tel_elem.text = telefones
 
-    # Endereço
     endereco = ET.SubElement(imovel_elem, 'endereco')
     rua = ET.SubElement(endereco, 'rua')
     rua.text = imovel['endereco']['rua']
@@ -60,7 +56,6 @@ for imovel in data['imobiliaria']['imovel']:
         numero = ET.SubElement(endereco, 'numero')
         numero.text = str(imovel['endereco']['numero'])
 
-    # Características
     caracteristicas = ET.SubElement(imovel_elem, 'caracteristicas')
     tamanho = ET.SubElement(caracteristicas, 'tamanho')
     tamanho.text = str(imovel['caracteristicas']['tamanho'])
@@ -69,12 +64,8 @@ for imovel in data['imobiliaria']['imovel']:
     numBanheiros = ET.SubElement(caracteristicas, 'numBanheiros')
     numBanheiros.text = str(imovel['caracteristicas']['numBanheiros'])
 
-    # Valor
     valor = ET.SubElement(imovel_elem, 'valor')
     valor.text = str(imovel['valor'])
 
-# Cria árvore e salva em arquivo XML
-tree = ET.ElementTree(imobiliaria)
-tree.write('imobiliaria_convertida.xml', encoding='utf-8', xml_declaration=True)
-
-print("Arquivo 'imobiliaria_convertida.xml' criado com sucesso!")
+xml_string = ET.tostring(imobiliaria, encoding='unicode')
+print(xml_string)
