@@ -9,7 +9,7 @@
             <ingrediente numero="02">Batata</ingrediente>
             <ingrediente numero="03">Batata</ingrediente>
         </ingredientes>   
-        <preco>R$ 20,00</preco>
+        <preco>20,00</preco>
         <tempo>10min</tempo>
         <calorias>88 calorias</calorias>
     </prato>
@@ -24,7 +24,7 @@
             <ingrediente numero="04">Cebola</ingrediente>
             <ingrediente numero="05">Alho</ingrediente>
         </ingredientes>
-        <preco>R$ 25,00</preco>
+        <preco>25,00</preco>
         <tempo>20min</tempo>
         <calorias>450 calorias</calorias>
     </prato>
@@ -39,7 +39,7 @@
             <ingrediente numero="04">Morango</ingrediente>
             <ingrediente numero="05">Nozes</ingrediente>
         </ingredientes>
-        <preco>R$ 18,00</preco>
+        <preco>18,00</preco>
         <tempo>18min</tempo>
         <calorias>120 calorias</calorias>
     </prato>
@@ -54,7 +54,7 @@
             <ingrediente numero="04">Abobrinha</ingrediente>
             <ingrediente numero="05">Azeite</ingrediente>
         </ingredientes>
-        <preco>R$ 30,00</preco>
+        <preco>30,00</preco>
         <tempo>17min</tempo>
         <calorias>350 calorias</calorias>
     </prato>
@@ -68,7 +68,7 @@
             <ingrediente numero="03">Sal</ingrediente>
             <ingrediente numero="04">Pimenta</ingrediente>
         </ingredientes>
-        <preco>R$ 15,00</preco>
+        <preco>15,00</preco>
         <tempo>15min</tempo>
         <calorias>200 calorias</calorias>
     </prato>
