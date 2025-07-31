@@ -1,12 +1,12 @@
 import json
 import os
+1
+caminho_arquivo = os.path.join(os.path.dirname(__file__), 'imobiliaria.json')
 
-caminho = os.path.join(os.path.dirname(__file__), "imobiliaria.json")
+with open(caminho_arquivo, 'r', encoding='utf-8') as file:
+    data = json.load(file)
 
-with open(caminho, encoding="utf-8") as json_file:
-    parsed_data = json.load(json_file)
-
-imoveis = parsed_data["imobiliaria"]["imovel"]
+imoveis = data["imobiliaria"]["imovel"]
 
 
 print("LISTA DE IMÓVEIS DISPONÍVEIS:\n")
